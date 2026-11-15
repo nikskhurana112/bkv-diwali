@@ -30,63 +30,60 @@ export default function HomePage() {
             <a href="https://in8ly.github.io/I-am-light/">
               Diwali Virtue Cards <span aria-hidden="true">↗</span>
             </a>
-            <a href="https://vancouver.brahmakumaris.ca/donate-online/">
+            <a className="nav-donate" href="https://vancouver.brahmakumaris.ca/donate-online/">
               Donate <span aria-hidden="true">↗</span>
             </a>
           </nav>
         </div>
       </header>
 
-      <main id="main">
-        <section className="shell hero" aria-labelledby="welcome">
-          <div className="hero-copy">
-            <p className="eyebrow"><span /> Raja Yoga meditation</p>
-            <h1 id="welcome">A moment<br /> <em>of peace.</em></h1>
-            <p className="intro">
-              Welcome to the Brahma Kumaris meditation workshop. Try a guided
-              meditation here or at home, or join us at a centre near you.
-            </p>
-            <div className="hero-actions">
-              <a className="button" href="#meditations">
-                Explore meditations <span aria-hidden="true">↓</span>
-              </a>
-              <a className="text-link" href="#centres">
-                Find a centre <span aria-hidden="true">↘</span>
-              </a>
+      <main id="main" tabIndex={-1}>
+        <section className="hero" aria-labelledby="welcome">
+          <div className="shell hero-inner">
+            <div className="hero-copy">
+              <p className="eyebrow">Raja Yoga meditation</p>
+              <h1 id="welcome">A moment <span>of peace.</span></h1>
+              <p className="intro">
+                Welcome to the Brahma Kumaris meditation workshop. Try a guided
+                meditation here or at home, or join us at a centre near you.
+              </p>
+              <div className="hero-actions">
+                <a className="button" href="#meditations">
+                  Explore meditations <span aria-hidden="true">↓</span>
+                </a>
+                <a className="text-link" href="#centres">
+                  Find a centre <span aria-hidden="true">↘</span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="hero-image">
-            <Image
-              src="/coastal-dawn.webp"
-              width={1350}
-              height={900}
-              alt="The sun rises over a quiet coastal inlet framed by mountains."
-              loading="eager"
-              fetchPriority="high"
-              unoptimized
-            />
+            <div className="hero-image">
+              <Image
+                src="/coastal-dawn.webp"
+                width={1350}
+                height={900}
+                alt="The sun rises over a quiet coastal inlet framed by mountains."
+                loading="eager"
+                fetchPriority="high"
+                unoptimized
+              />
+            </div>
           </div>
         </section>
 
         <section className="library" id="meditations" aria-labelledby="meditation-heading">
           <div className="shell">
             <div className="section-intro">
-              <div>
-                <p className="eyebrow"><span /> Practice at your own pace</p>
-                <h2 id="meditation-heading">The meditation collection</h2>
-              </div>
+              <h2 id="meditation-heading">Guided meditations</h2>
               <p>
-                New to meditation? Sit comfortably, choose a video, and follow
-                the guidance. Each link opens on YouTube.
+                Sit comfortably, choose a practice, and follow the guidance.
+                Videos open on YouTube.
               </p>
             </div>
             <ul className="collection">
               {meditations.map(({ title, guide, url, playlist }) => (
                 <li key={url}>
                   <a className="video" href={url}>
-                    <span className={playlist ? "play playlist" : "play"} aria-hidden="true">
-                      {playlist ? "☰" : null}
-                    </span>
+                    <span className={playlist ? "play playlist" : "play"} aria-hidden="true" />
                     <span className="video-copy">
                       <strong>{title}</strong>
                       <small>{guide}</small>
@@ -103,7 +100,6 @@ export default function HomePage() {
           <div className="shell">
             <div className="section-intro">
               <div>
-                <p className="eyebrow"><span /> Meditate with us</p>
                 <h2 id="centres-heading">Find your local centre</h2>
                 <p>Explore upcoming workshops, courses, and group meditations.</p>
               </div>
