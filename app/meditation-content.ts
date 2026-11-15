@@ -7,6 +7,12 @@ type Meditation = {
 
 export const meditations: readonly Meditation[] = [
   {
+    title: "Meditation Playlist",
+    guide: "YouTube playlist",
+    url: "https://www.youtube.com/playlist?list=PLauPtl3ycciU",
+    playlist: true,
+  },
+  {
     title: "Essential Spirituality – A New Series",
     guide: "Sr. Jayanti",
     url: "https://youtu.be/bN6HjshIZBM?si=bxQ2OhyGbMVWutTz",
@@ -75,12 +81,6 @@ export const meditations: readonly Meditation[] = [
     title: "Exclusive Healing Meditation",
     guide: "Sr. Shivani",
     url: "https://youtu.be/sqVxl-1WfJo?si=p0aCNXFyPWYaaM8F",
-  },
-  {
-    title: "Meditation Playlist",
-    guide: "YouTube playlist",
-    url: "https://www.youtube.com/playlist?list=PLauPtl3ycciU",
-    playlist: true,
   },
 ];
 

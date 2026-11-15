@@ -44,8 +44,10 @@ export default function HomePage() {
               <p className="eyebrow">Raja Yoga meditation</p>
               <h1 id="welcome">A moment <span>of peace.</span></h1>
               <p className="intro">
-                Welcome to the Brahma Kumaris meditation workshop. Try a guided
-                meditation here or at home, or join us at a centre near you.
+                Welcome to the Brahma Kumaris Vancouver. Try a guided meditation
+                here (find the playlist below) or at home or join us at a center
+                near you. We have a center in Vancouver, Surrey, Abbotsford,
+                Victoria, Parksville, and Prince George.
               </p>
               <div className="hero-actions">
                 <a className="button" href="#meditations">

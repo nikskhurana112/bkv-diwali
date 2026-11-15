@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Meditate with Brahma Kumaris | Vancouver, Surrey & Abbotsford",
   description:
-    "Discover Raja Yoga, try a guided meditation, and find your Brahma Kumaris centre in Vancouver, Surrey, or Abbotsford.",
+    "Try guided meditation and find a Brahma Kumaris center in Vancouver, Surrey, Abbotsford, Victoria, Parksville, or Prince George.",
 };
 
 export const viewport: Viewport = {
