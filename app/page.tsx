@@ -18,9 +18,10 @@ export default function HomePage() {
               loading="eager"
               unoptimized
             />
-            <small>Vancouver · Surrey · Abbotsford</small>
           </a>
-          <nav className="main-nav" aria-label="Main navigation">
+        </div>
+        <div className="navigation">
+          <nav className="shell main-nav" aria-label="Main navigation">
             <a href="#meditations">Meditations</a>
             <a href="#centres">Centres</a>
             <a href={eventsUrl}>Events <span aria-hidden="true">↗</span></a>
@@ -30,7 +31,7 @@ export default function HomePage() {
             <a href="https://in8ly.github.io/I-am-light/">
               Diwali Virtue Cards <span aria-hidden="true">↗</span>
             </a>
-            <a className="nav-donate" href="https://vancouver.brahmakumaris.ca/donate-online/">
+            <a href="https://vancouver.brahmakumaris.ca/donate-online/">
               Donate <span aria-hidden="true">↗</span>
             </a>
           </nav>
@@ -39,10 +40,28 @@ export default function HomePage() {
 
       <main id="main" tabIndex={-1}>
         <section className="hero" aria-labelledby="welcome">
+          <div className="hero-banner">
+            <Image
+              src="/vancouver-wisdom.jpg"
+              alt="Vancouver waterfront at sunset with the words Nurturing Inner Wisdom."
+              fill
+              loading="eager"
+              fetchPriority="high"
+              unoptimized
+            />
+          </div>
           <div className="shell hero-inner">
+            <Image
+              className="hero-emblem"
+              src="/vancouver-peace.png"
+              width={420}
+              height={423}
+              alt=""
+              unoptimized
+            />
             <div className="hero-copy">
               <p className="eyebrow">Raja Yoga meditation</p>
-              <h1 id="welcome">A moment <span>of peace.</span></h1>
+              <h1 id="welcome">A moment of peace.</h1>
               <p className="intro">
                 Welcome to the Brahma Kumaris Vancouver. Try a guided meditation
                 here (find the playlist below) or at home or join us at a center
@@ -57,17 +76,6 @@ export default function HomePage() {
                   Find a centre <span aria-hidden="true">↘</span>
                 </a>
               </div>
-            </div>
-            <div className="hero-image">
-              <Image
-                src="/coastal-dawn.webp"
-                width={1350}
-                height={900}
-                alt="The sun rises over a quiet coastal inlet framed by mountains."
-                loading="eager"
-                fetchPriority="high"
-                unoptimized
-              />
             </div>
           </div>
         </section>
@@ -105,7 +113,7 @@ export default function HomePage() {
                 <h2 id="centres-heading">Find your local centre</h2>
                 <p>Explore upcoming workshops, courses, and group meditations.</p>
               </div>
-              <a className="button light" href={eventsUrl}>
+              <a className="button" href={eventsUrl}>
                 View upcoming events <span aria-hidden="true">↗</span>
               </a>
             </div>
