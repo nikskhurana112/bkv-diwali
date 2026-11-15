@@ -10,16 +10,29 @@ export default function HomePage() {
       <header className="masthead">
         <div className="shell masthead-inner">
           <a className="wordmark" href="#main">
-            <span className="sun" aria-hidden="true" />
-            <span>
-              Brahma Kumaris
-              <small>Vancouver · Surrey · Abbotsford</small>
-            </span>
+            <Image
+              src="/brahma-kumaris-vancouver.png"
+              width={1200}
+              height={184}
+              alt="The Brahma Kumaris Vancouver"
+              loading="eager"
+              unoptimized
+            />
+            <small>Vancouver · Surrey · Abbotsford</small>
           </a>
-          <nav aria-label="Main navigation">
+          <nav className="main-nav" aria-label="Main navigation">
             <a href="#meditations">Meditations</a>
             <a href="#centres">Centres</a>
             <a href={eventsUrl}>Events <span aria-hidden="true">↗</span></a>
+            <a href="https://vancouver.brahmakumaris.ca/upcoming-courses/">
+              Courses <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://in8ly.github.io/I-am-light/">
+              Diwali Virtue Cards <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://vancouver.brahmakumaris.ca/donate-online/">
+              Donate <span aria-hidden="true">↗</span>
+            </a>
           </nav>
         </div>
       </header>
