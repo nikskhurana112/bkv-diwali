@@ -87,7 +87,7 @@ export const meditations: readonly Meditation[] = [
 export const centres = [
   {
     name: "Vancouver",
-    street: "3012 Kingsway, Unit 100",
+    street: "3018 Kingsway, Unit 100",
     city: "Vancouver, BC V5R 5J7",
     phone: "604-436-4795",
   },
